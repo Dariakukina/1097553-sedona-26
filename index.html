@@ -19,31 +19,49 @@
      </nav>
    </header>
    <main>
-       <h1>Sedona</h1>
+       <h1 class="visually-hidden">Sedona</h1>
        <section>
-         <h2>Описание города</h2>
+         <h2 class="visually-hidden">Описание города</h2>
          <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
        </section>  
        <section>    
-         <h2>Преимущества</h2>
+         <h2 class="visually-hidden">Преимущества</h2>
          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
        </section>
        <section>
-         <h2>Лучшие предложения в Седоне</h2>
+         <h2 class="visually-hidden">Лучшие предложения в Седоне</h2>
          <p>Заинтересовались?</p>
          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
          <button type="button">Поиск гостиницы в Седоне</button>
-         <!-- Здесь будет форма -->
        </section>
-       <section>
-         <h2>Данные для поиска</h2>
-         <p>дата заезда</p>
-         <p>Дата выезда</p>
-         <p>Взрослые</p>
-         <p>Дети</p>
-         <!-- Здесь будет форма -->
-         <button type="button">Найти</button>
-       </section>
+       <h2 class="visually-hidden">Данные для поиска</h2>
+       <h3 class="visually-hidden">Форма ввода</h3>
+         <form action="#" method="post">
+           <label for="data_zaezda">Дата заезда:</label>
+           <input type="text" name="zaezd" id="data_zaezda" value="24 АПРЕЛЯ 2017" aria-label="Дата заезда">
+              <br>
+              <br>
+           <label for="data_viezda">Дата выезда:</label>
+           <input type="text" name="viezd" id="data_viezda" value="4 ИЮЛЯ 2017" aria-label="Дата выезда">
+              <br>
+              <br>
+           <div>
+             <label for="kol_vzroslie">Взрослые</label>
+             <button type="button">-</button>
+             <input type="number" min="0" max="30" step="1" name="vzroslie" id="kol_vzroslie" value="2" aria-label="Количество взрослых">
+             <button type="button">+</button>
+           </div>
+              <br>
+           <div>
+              <label for="kol_deti">Дети</label>
+              <button type="button">-</button>
+              <input type="number" min="0" max="30" step="1" name="deti" id="kol_deti" value="0" aria-label="Количество детей">
+              <button type="button">+</button>
+           </div>
+             <br>
+             <br>
+           <button type="button">Найти</button>           
+         </form>
    <footer>
      <a href="">#Visitsedona</a>
      <ul>
