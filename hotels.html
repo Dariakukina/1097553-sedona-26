@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-</head>
-<body>
-  <header>
-   <nav>
-     <a href="index.html">
-       <img src="img/logo-sedona.svg" width="88" height="92" alt="Логотип Sedona">
-     </a>
-     <ul>
-        <li><a href="info.html">Информация</a></li>
-        <li><a href="fotovideo.html">Фото и видео</a></li>
-        <li><a href="kartashtata.html">Карта штата</a></li>
-        <li><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-   </nav>
- </header>
+ <head>
+   <meta charset="utf-8">
+   <title>HTML Academy: Седона</title>
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
+ </head>
+ <body>
+   <header class="main-header">
+     <nav class="main-navigation">
+       <a class="main-header-logo" href="index.html">
+         <img src="img/logo-sedona.svg" width="88" height="92" alt="Логотип Sedona">
+       </a>
+       <ul class="site-navigation">
+         <li><a href="info.html">Информация</a></li>
+         <li><a href="fotovideo.html">Фото и видео</a></li>
+         <li><a href="kartashtata.html">Карта штата</a></li>
+         <li><a href="hotels.html">Гостиницы</a></li>
+       </ul>
+     </nav>
+   </header>
    <main>
      <h1>Гостиницы</h1>
      <section class="catalog">
@@ -79,20 +82,20 @@
          </li>
        </ul>
      </section>
-   <footer>
-     <a href="">#Visitsedona</a>
-     <ul>
-       <li><a href="#">Твиттер</a></li>
-       <li><a href="#">Фейсбук</a></li>
-       <li><a href="#">Ютуб</a></li>
-     </ul>
-     <p>
-       Website by 
-       <a href="https://htmlacademy.ru/intensive/htmlcss">
-         <img src="img/logo-htmlacademy.svg" width="454" height="158" alt="Логотип HTML academy">
-       </a>
-     </p>
-   </footer>    
+     <footer class="main-footer">
+      <a class="footer-contacts" href="">#Visitsedona</a>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+      <p class="footer-copyright">
+        Website by 
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img class="button" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
+        </a>
+      </p>
+    </footer>
    </main>
 </body>
 </html>

@@ -3,14 +3,17 @@
  <head>
    <meta charset="utf-8">
    <title>HTML Academy: Седона</title>
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+   <link href="css/normalize.css" rel="stylesheet">
+   <link href="css/styles.css" rel="stylesheet">
  </head>
  <body>
-   <header>
-     <nav>
-       <a>
+   <header class="main-header">
+     <nav class="main-navigation">
+       <a class="main-header-logo">
          <img src="img/logo-sedona.svg" width="88" height="92" alt="Логотип Sedona">
        </a>
-       <ul>
+       <ul class="site-navigation">
          <li><a href="info.html">Информация</a></li>
          <li><a href="fotovideo.html">Фото и видео</a></li>
          <li><a href="kartashtata.html">Карта штата</a></li>
@@ -18,17 +21,18 @@
        </ul>
      </nav>
    </header>
-   <main>
+   <main class="container">
        <h1 class="visually-hidden">Sedona</h1>
-         <p>Седона - небольшой городок в Аризоне, заслуживающий большего</p>
-       <section>    
+       <img src="img/intro-welcome.svg" width="459" height="353" alt="welcome">
+         <p class="text-selection">Седона - небольшой городок в Аризоне, заслуживающий большего</p>
+       <section class="features">    
          <h2 class="visually-hidden">Преимущества</h2>
-         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+         <p class="text-selection2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
        </section>
        <section>
-         <h2>Заинтересовались?</h2>
-         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-         <button type="button">Поиск гостиницы в Седоне</button>
+         <p class="text-selection3">Заинтересовались?</p>
+         <p class="text-selection4">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <!-- <button type="button">Поиск гостиницы в Седоне</button>
        </section>
          <form action="#" method="post">
            <label for="arrival-date">Дата заезда:</label>
@@ -49,17 +53,18 @@
            </div>
            <button type="submit">Найти</button>           
          </form>
-   <footer>
-     <a href="">#Visitsedona</a>
-     <ul>
-       <li><a href="#">Твиттер</a></li>
-       <li><a href="#">Фейсбук</a></li>
-       <li><a href="#">Ютуб</a></li>
-     </ul>
-     <p>
+        -->
+   <footer class="main-footer">
+     <a class="footer-contacts" href="">#Visitsedona</a>
+       <ul class="footer-social">
+         <li><a class="social-button" href="#">Твиттер</a></li>
+         <li><a class="social-button" href="#">Фейсбук</a></li>
+         <li><a class="social-button" href="#">Ютуб</a></li>
+       </ul>
+     <p class="footer-copyright">
        Website by 
        <a href="https://htmlacademy.ru/intensive/htmlcss">
-       <img src="img/logo-htmlacademy.svg" width="454" height="158" alt="Логотип HTML academy">
+       <img class="button" src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML academy">
        </a>
      </p>
    </footer>
