@@ -40,19 +40,26 @@ a {
 
 /* main*/
 
-.text-selection{
+.intro-text{
  font-size: 21px;
  line-height: 26px;
  font-weight: 700;
  color: #000000;
 }
 
-.text-selection:hover {
-  color: #81b3d2;
-}
-.text-selection:focus {
-  color: #cacaca
-}
+
+.hotel-name-link{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+ } 
+ .hotel-name-link:hover {
+   color: #81b3d2;
+ }
+ .hotel-name-link:focus {
+   color: #cacaca;
+ }
 
 .advantage{
   font-size: 14px;
@@ -77,39 +84,11 @@ a {
   list-style: none;
 }
 
-
-.button-detail {
-  text-align: center;
-  color: #ffffff;
-  font-weight: 700;
-
-  background-color: #81b3d2;
-  border: none;
-  padding-right: 17px;
-  padding-left: 17px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  
-}
-.button-detail:hover{
-  color: #ffffff;
-  background-color: #669ec0;
-  }
-  
-.button-detail:focus {
-  color:#94b9d2;
-  background-color: #5496bd;
-}
-
-.button{
-  list-style: none;
-}
 .button {
   text-align: center;
   color: #ffffff;
   font-weight: 700;
 
-  background-color: #766357;
   border: none;
   padding-right: 17px;
   padding-left: 17px;
@@ -117,19 +96,36 @@ a {
   margin-top: 8px;
 }
 
-.button:hover{
+.button-more {
+  background-color: #81b3d2;
+}
+.button-more:hover{
+    color: #ffffff;
+    background-color: #669ec0;
+}
+.button-more:focus {
+  color:#94b9d2;
+  background-color: #5496bd;
+}
+
+.button-book {
+  background-color: #766357;
+}
+.button-book:hover{
   color: #ffffff;
   background-color: #604e43;
   }
   
-.button:focus {
+  .button-book:focus {
   color:#928a85;
   background-color: #503e33;
 }
-.reiting-stars {
+
+
+.rating-stars {
   list-style: none;
 }
-.reiting {
+.rating {
   background-color: #f2f2f2;
 }
 
