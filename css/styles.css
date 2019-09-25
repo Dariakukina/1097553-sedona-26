@@ -14,19 +14,40 @@ body {
 }
 
 /* header*/
+.main-header-logo {
+  width: 138px;
+  height: 70px;
+}
+
+.main-header {
+  margin-bottom: 75px;
+}
 a {
   text-decoration: none;
 }
 .main-navigation {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
   font-size: 14px;
   line-height: 26px;
   color: #000000;
 
   background-color: #ffffff;
 }
+
+
 .site-navigation {
-  list-style: none;
+ list-style: none;
+ margin: 0;
+ padding: 0;
 }
+
+.site-navigation {
+  width: 1200px;
+}
+
 .site-navigation a {
   color: #000000;
   font-weight: 700;
@@ -39,6 +60,24 @@ a {
 }
 
 /* main*/
+
+.container {
+  width: 1200px;
+}
+.container-welcome {
+width: 459px;
+height: 353px;
+margin-left: 410px;
+margin-right: 410px;
+margin-top: 79px;
+margin-bottom: 79px;
+}
+
+.conteiner-intro {
+  display: block;
+  justify-content: center;
+}
+
 
 .intro-text{
  font-size: 21px;
@@ -61,12 +100,21 @@ a {
    color: #cacaca;
  }
 
+ .features {
+    display: block;
+    justify-content: center;
+  }
+ }
+
 .advantage{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   }
 .interested {
+    display: block;
+    justify-content: center;
+
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -74,6 +122,9 @@ a {
  }
 
  .travel-date {
+    display: block;
+    justify-content: center;
+  
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -134,8 +185,17 @@ a {
 .main-footer {
   background-color: rgba(254, 254, 254, 0.9);  
 }
+.main-footer .container{
 
+display: flex;
+
+}
 .footer-contacts {
+  width: 136px;
+  margin: 0;
+  margin-right: 70px;
+  justify-content: center;
+
   color: #000000;
 }
 
@@ -144,6 +204,8 @@ a {
   text-decoration: none;
 }
 .footer-social {
+  width: 150px;
+
   list-style: none;
 }
 
@@ -158,25 +220,10 @@ color: #669ec0;
   color: #5496bd;
 }
 
+.footer-copyright {
+width: 200px;
 
+color: #000000
+}
 /* сеточные стили */
 
-html,
-body {
-  min-width: 1200px;
-  min-height: 2762px;
-}
-
-body {
-  /* Временно для сетки */
-  background-image: url('../img/sedona-index.jpg');
-  background-size: 1280 auto;
-  background-repeat: no-repeat;
-}
-
-.main-header {
-  margin-bottom: 75px;
-
-  /* Временно для сетки */
-  min-height: 71px;
-}
