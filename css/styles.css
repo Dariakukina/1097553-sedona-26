@@ -157,3 +157,26 @@ color: #669ec0;
 .social-button:focus {
   color: #5496bd;
 }
+
+
+/* сеточные стили */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 2762px;
+}
+
+body {
+  /* Временно для сетки */
+  background-image: url('../img/sedona-index.jpg');
+  background-size: 1280 auto;
+  background-repeat: no-repeat;
+}
+
+.main-header {
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 71px;
+}
