@@ -22,6 +22,8 @@ body {
 .main-header {
   margin-bottom: 75px;
 }
+
+
 a {
   text-decoration: none;
 }
@@ -43,6 +45,11 @@ a {
  margin: 0;
  padding: 0;
 }
+.site-navigation li {
+  display: inline;
+  margin-right: 5px;
+  
+}
 
 .site-navigation {
   width: 1200px;
@@ -63,17 +70,20 @@ a {
 
 .container {
   width: 1200px;
+  
 }
 .container-welcome {
 width: 459px;
 height: 353px;
-margin-left: 410px;
-margin-right: 410px;
 margin-top: 79px;
 margin-bottom: 79px;
+margin-left: 410px;
+margin-right: 410px;
+
+
 }
 
-.conteiner-intro {
+.container-intro {
   display: block;
   justify-content: center;
 }
@@ -185,11 +195,11 @@ margin-bottom: 79px;
 .main-footer {
   background-color: rgba(254, 254, 254, 0.9);  
 }
-.main-footer .container{
 
+.main-footer .container-footer{
 display: flex;
-
 }
+
 .footer-contacts {
   width: 136px;
   margin: 0;
@@ -225,5 +235,15 @@ width: 200px;
 
 color: #000000
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 /* сеточные стили */
 
