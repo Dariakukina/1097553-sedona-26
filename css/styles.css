@@ -54,6 +54,7 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  position: relative;
   
 }
 .site-navigation li {
@@ -82,6 +83,171 @@ a {
 
 /* main*/
 
+/* main hotels*/
+.search-results{
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  background-color: #ffffff;
+}
+
+
+.catalog {
+  display: flex;
+}
+
+.catalog-list {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+
+
+.catalog-hotels {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 72px;
+  padding-right: 72px;
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  list-style: none;
+}
+
+
+.catalog-item {
+  display: flex;
+  width: 100%;
+}
+
+.photo {
+  padding: 0;
+  margin: 0;
+  margin-right: 30px;
+
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-right: 540px;
+}
+
+.amara{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.desert{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.villas{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 4px;
+}
+.hotel-type {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 12px;
+}
+.amara-hotel {
+  margin: 0;
+  padding-right: 39px;
+}
+.desert-hotel {
+  margin: 0;
+  padding-right: 39px;
+}
+.villas-hotel {
+  margin: 0;
+  padding-right: 39px;
+}
+
+
+.hotel-name-link{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+ }
+
+.hotel-name-link:hover {
+  color: #81b3d2;
+}
+
+.hotel-name-link:focus {
+  color: #cacaca;
+ }
+
+ .button {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+
+  border: none;
+  padding-right: 16px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  
+}
+
+.button-more {
+  background-color: #81b3d2;
+  margin-right: 6px;
+}
+.button-more:hover{
+  color: #ffffff;
+  background-color: #669ec0;
+}
+.button-more:focus {
+  color:#94b9d2;
+  background-color: #5496bd;
+}
+
+.button-book {
+  background-color: #766357;
+}
+.button-book:hover{
+  color: #ffffff;
+  background-color: #604e43;
+}
+  
+.button-book:focus {
+  color:#928a85;
+  background-color: #503e33;
+}
+.view-rating {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-stars {
+  list-style: none;
+}
+.rating {
+  background-color: #f2f2f2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* main index*/
 .container {
   width: 1200px;
   margin-left: auto;
@@ -97,8 +263,6 @@ a {
   background-repeat: no-repeat;
 }
 
-.decor {
-}
 
 .welcome-sedona {
   display: block;
@@ -127,22 +291,7 @@ a {
 }
 
 
-.hotel-name-link{
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
- }
 
-.hotel-name-link:hover {
-  color: #81b3d2;
-}
-
-.hotel-name-link:focus {
-  color: #cacaca;
- }
 
 .features {
   display: block;
@@ -190,57 +339,9 @@ a {
   background-color: #ffffff;
   }
 
-  
-.catalog-list {
-  list-style: none;
-}
 
-.button {
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
 
-  border: none;
-  padding-right: 17px;
-  padding-left: 17px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-}
 
-.button-more {
-  background-color: #81b3d2;
-}
-.button-more:hover{
-  color: #ffffff;
-  background-color: #669ec0;
-}
-.button-more:focus {
-  color:#94b9d2;
-  background-color: #5496bd;
-}
-
-.button-book {
-  background-color: #766357;
-}
-.button-book:hover{
-  color: #ffffff;
-  background-color: #604e43;
-}
-  
-.button-book:focus {
-  color:#928a85;
-  background-color: #503e33;
-}
-
-.rating-stars {
-  list-style: none;
-}
-.rating {
-  background-color: #f2f2f2;
-  text-align: center;
-  text-transform: uppercase;
-}
 
   
 /* footer*/
