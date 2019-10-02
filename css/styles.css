@@ -404,15 +404,41 @@ a {
   color: #5496bd;
 }
 
+.twitter {
+  transform: translateX(15px) translateY(17px);
+}
+
+.facebook {
+  transform: translateX(17px) translateY(13px);
+}
+
+.youtube {
+  transform: translateX(13px) translateY(16px);
+}
+
+.twitter:hover{
+  color: #ffffff;
+}
+
+.twitter:focus{
+  color: #88b6d1;
+}
+
+.Website {
+  margin: auto;
+  padding: auto;
+}
+
 .footer-copyright {
-flex-grow: 0;
-color: #000000;
-padding-right: 101px;
-font-size: 14px;
-line-height: 26px;
-font-weight: 400;
-text-align: center;
-text-transform: uppercase;
+  display: flex;
+  flex-grow: 0;
+  color: #000000;
+  padding-right: 101px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
 .visually-hidden {
   position: absolute;
