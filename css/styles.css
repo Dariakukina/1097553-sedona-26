@@ -14,7 +14,8 @@ body {
 }
 
 /* header*/
-.main-header-logo {
+.main-header-logo {  
+  display: block;
   width: 138px;
   height: 70px;
   margin-left: auto;
@@ -23,6 +24,9 @@ body {
   top: -18px;
   left: 50%;
   margin-left: -69px;
+  padding-top: 18px ;
+  padding-bottom: 18px;
+  z-index: 2;
 }
 
 .main-header {
@@ -54,26 +58,23 @@ a {
   margin: 0;
   padding: 0;
   position: relative;
-  
 }
 
 .logo-nav {
   width: 20%;  
 }
 
-.site-navigation a {
+.menu {
   display: block;
   color: #000000;
   font-weight: 700;
   padding-top: 18px ;
   padding-bottom: 18px;
-
-
 }
-.site-navigation a:hover {
+.menu:hover {
   color: #81b3d2;
 }
-.site-navigation a:focus {
+.menu:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -111,15 +112,20 @@ a {
 }
 
 .photo {
-  display: block;
+  display: flex;
   margin-right: 30px;
+ }
+
+ .photo-hotel{
+   width: 135px;
+   height: 90px;
  }
 
 .description {
   margin-right: auto;
 }
 
-.name-hotels{
+.hotel-name{
   margin: 0;
 }
 
@@ -152,7 +158,7 @@ table {
  }
 
  .button {
-   display: block;
+  display: block;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -189,53 +195,46 @@ table {
   color:#928a85;
   background-color: #503e33;
 }
-.view-rating {
+
+.star {
   display: flex;
-  flex-direction: column;
-  margin-left: auto;
-}
-
-.rating-stars {
-  list-style: none;
-}
-
-.stars {
   height: 17px;
+  width: 16px;
   background-image: url(../img/star.svg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: left;
-  margin-left: auto;
+  margin: 0;
+  
 }
 
-.stars2 {
-  width: 36px;
- }
-
-.stars3 {
-  width: 54px;
+.stars
+{
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding-inline-start: 0px;
+  justify-content: flex-end;
   }
-
-.stars4 {
-  width: 72px;
-  }
-
 .rating {
   background-color: #f2f2f2;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 49px;
+  margin-top: 38px;
+  padding-left: 16px;
+  padding-right: 13px;
+  padding-bottom: 6px;
+  padding-top: 5px;
 }
 
 
 /* main index*/
 .container {
   width: 1200px;
+  
   margin-left: auto;
   margin-right: auto;
     
   background-color: #ffffff;
- 
-  
 }
 .container-welcome {
   height: 505px;
@@ -243,19 +242,25 @@ table {
   background-position: 0 -55px;
   display: flex;
   flex-direction: column;
+  position: relative;
+ 
+  z-index: 1;
 
 }
 
-.container-welcome:after { 
+.container-welcome:after {
   content: "";
   height: 57px;
-  width: 1202px;
+  width: 1200px;
   background-image: url(../img/intro-mask.svg);
+  position: absolute;
+  bottom: -0.999px;
+  z-index: 2;
 }
 
 .welcome-sedona {
   display: block;
-  padding-top: 76px;
+  /*padding-top: 20px;*/
   margin: auto;
   
 }
@@ -398,12 +403,8 @@ table {
   justify-content: center;
   align-items: center;
   flex-grow: 0;
-  color: #000000;
   padding-right: 101px;
-  font-size: 14px;
-  line-height:55px;
-  font-weight: 400;
-  text-transform: uppercase;
+  
   
   
  /* margin-top: 0;
@@ -413,13 +414,19 @@ table {
 .wbtext{
   display: flex;
   vertical-align: middle;
+  color: #000000;
+  font-size: 14px;
+  line-height:55px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
-.halogo-link {  
-  color: #231f20;
+.academy-logo-link {  
+  width: 115px;
+  height: 41px;
 }
 
-.halogo{
+.academy-logo{
   vertical-align: middle;
   padding-left: 8px;
 }
