@@ -42,11 +42,7 @@ a {
   text-decoration: none;
 }
 
-.text-navigation {
-  font-size: 14px;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
+.site-navigation-item {
   width: 20%;
 
 }
@@ -60,16 +56,15 @@ a {
   position: relative;
 }
 
-.logo-nav {
-  width: 20%;  
-}
-
-.menu {
+.site-navigation-link {
   display: block;
   color: #000000;
   font-weight: 700;
   padding-top: 18px ;
   padding-bottom: 18px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .menu:hover {
   color: #81b3d2;
@@ -197,22 +192,18 @@ table {
 }
 
 .star {
-  display: flex;
   height: 17px;
   width: 16px;
   background-image: url(../img/star.svg);
   background-repeat: no-repeat;
-  background-position: left;
-  margin: 0;
-  
+  background-position: left;  
 }
 
-.stars
-{
+.stars{
   display: flex;
   list-style: none;
   margin-left: auto;
-  padding-inline-start: 0px;
+  padding-left: 0px;
   justify-content: flex-end;
   }
 .rating {
@@ -254,7 +245,7 @@ table {
   width: 1200px;
   background-image: url(../img/intro-mask.svg);
   position: absolute;
-  bottom: -0.999px;
+  bottom: -1px;
   z-index: 2;
 }
 
@@ -411,9 +402,7 @@ table {
   margin-bottom: 0;*/
 }
 
-.wbtext{
-  display: flex;
-  vertical-align: middle;
+.copyright-text{
   color: #000000;
   font-size: 14px;
   line-height:55px;
