@@ -22,7 +22,6 @@
    </header>
    <main class="search-results">
 
-     <section>
        <h1 class="visually-hidden">Фильтр</h1>
        <form action="#" method="post">
          <fieldset>
@@ -59,15 +58,19 @@
                 </li>
               </ul>
           </fieldset>
-              <p>Стоимость в сутки (Р):</p>
-               <p>
-                 <label>От<input type="text" value="0"></label>
-                 <label>До<input type="text" value="3000"></label>
-               </p>
-               <input type="range">
-               <button type="choose">Показать</button>
+          <fieldset>
+              <legend>Стоимость в сутки (Р):</legend>
+               <div>
+                 <label>От<input type="text" name="min-price" value="0"></label>
+                 <label>До<input type="text" name="max-price" value="3000"></label>
+               </div>
+               <div>
+                 <div> 
+                 </div>
+                 <button class="btn-transparent" type="submit">Показать</button>
+               </div>
+          </fieldset>
        </form>
-     </section>
 
      <section>
         <h2 class="visually-hidden">Результат</h2>
@@ -78,16 +81,22 @@
                <li><a href="#">По типу</a></li>
                <li><a href="#">По рейтингу</a></li>
              </ul>
-             <a href="#">
-                <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 0L0 10h11z"/>
-                </svg>
-             </a>
-             <a href="#">
-                <svg class="down-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
-                  <path d="M5.5 10L0 0h11"/>
-                </svg>
-             </a>
+             <ul>
+               <li>
+                 <a aria-label="По возрастанию цены" href="#">
+                   <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                   <path d="M5.5 0L0 10h11z"/>
+                   </svg>
+                 </a>
+               </li>
+               <li>
+                 <a aria-label="По убыванию цены" href="#">
+                   <svg class="down-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                   <path d="M5.5 10L0 0h11"/>
+                   </svg>
+                 </a>
+               </li>
+             </ul>
       </section>   
 
      <h1 class="visually-hidden">Гостиницы</h1>
