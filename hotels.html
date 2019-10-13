@@ -23,10 +23,10 @@
    <main class="search-results">
 
        <h1 class="visually-hidden">Поиск гостиниц</h1>
-       <form action="#" method="post">
+       <form class="infrastructure" action="#" method="post">
          <fieldset>
-           <legend>Инфраструктура:</legend>
-             <ul>
+           <legend class="text-bold">Инфраструктура:</legend>
+             <ul class="text-regular">
                <li>
                  <input type="checkbox" name="waterpool" id="waterpool" checked>
                  <label for="waterpool">Бассейн</label>
@@ -42,8 +42,8 @@
              </ul>
          </fieldset>
          <fieldset>
-            <legend>Тип жилья:</legend>
-              <ul>
+            <legend class="text-bold">Тип жилья:</legend>
+              <ul class="text-regular">
                 <li>
                   <input type="checkbox" name="hotel" id="hotel" checked>
                   <label for="hotel">Гостиница</label>
@@ -59,10 +59,10 @@
               </ul>
           </fieldset>
           <fieldset>
-              <legend>Стоимость в сутки (Р):</legend>
+              <legend class="text-bold">Стоимость в сутки (Р):</legend>
                <div>
-                 <label>От<input type="text" name="min-price" value="0"></label>
-                 <label>До<input type="text" name="max-price" value="3000"></label>
+                 <label class="text-regular">От<input type="text" name="min-price" value="0"></label>
+                 <label class="text-regular">До<input type="text" name="max-price" value="3000"></label>
                </div>
                <div>
                  <div></div>
@@ -75,23 +75,23 @@
 
      <section>
         <h2 class="visually-hidden">Результат</h2>
-          <p>Найдено: 3</p>
-          <p>Сортировка:</p>
-             <ul>
-               <li><a href="#">По цене</a></li>
-               <li><a href="#">По типу</a></li>
-               <li><a href="#">По рейтингу</a></li>
+          <p class="result">Найдено: 3</p>
+          <p class="sorting">Сортировка:</p>
+             <ul class="sorting">
+               <li><a class="sorting-link-blue" href="#">По цене</a></li>
+               <li><a class="sorting-link-gray" href="#">По типу</a></li>
+               <li><a class="sorting-link-gray" href="#">По рейтингу</a></li>
              </ul>
-             <ul>
+             <ul class="switch">
                <li>
-                 <a aria-label="По возрастанию цены" href="#">
+                 <a class="min" aria-label="По возрастанию цены" href="#">
                    <svg class="up-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                    <path d="M5.5 0L0 10h11z"/>
                    </svg>
                  </a>
                </li>
                <li>
-                 <a aria-label="По убыванию цены" href="#">
+                 <a class="max" aria-label="По убыванию цены" href="#">
                    <svg class="down-icon" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                    <path d="M5.5 10L0 0h11"/>
                    </svg>

@@ -84,7 +84,74 @@ a {
   background-color: #ffffff;
 }
 
+.text-bold {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
+.text-regular {
+  list-style: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.infrastructure {
+  background-image: url(../img/filter-background.jpg);
+}
+
+.sorting {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting-link-blue {  
+  color: #cacaca;
+}
+.sorting-link-blue:active{
+  color: #81b3d2;
+}
+.sorting-link-blue:hover {
+  color: #81b3d2;
+}
+.sorting-link-blue:focus {
+  color: #000000;
+}
+
+.sorting-link-gray {
+  color: #cacaca;
+  border-bottom: dashed;
+}
+.sorting-link-gray:active{
+  color: #81b3d2;
+}
+.sorting-link-gray:hover {
+  color: #81b3d2;
+}
+.sorting-link-gray:focus {
+  color: #000000;
+}
+
+.switch {
+  list-style: none;
+}
+
+ 
 
 .catalog-list {
   list-style: none;
@@ -286,9 +353,45 @@ table {
   text-transform: uppercase;
   padding-bottom: 52px;
   margin: 0;
-
-
   }
+
+
+.in-town {
+  list-style: none;  
+  text-align: center; 
+}
+
+.bold {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;  
+  text-transform: uppercase;
+}
+
+.regular {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.blue-background {
+  text-align: center; 
+  background-color: #81b3d2;
+}
+.white-background {
+   background-color: #ffffff;
+}
+.gray-background {
+  text-align: center; 
+  background-color: #eeeeee;
+}
+
+.map {
+  height: 593px;
+  background-image: url(../img/map.png);
+}
+
 .interested {
 
   font-size: 30px;
