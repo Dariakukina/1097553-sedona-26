@@ -84,7 +84,7 @@ a {
   background-color: #ffffff;
 }
 
-.text-bold {
+.form-headline {
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -92,7 +92,7 @@ a {
   text-transform: uppercase;
 }
 
-.text-regular {
+.form-list {
   list-style: none;
   color: #ffffff;
   font-size: 14px;
@@ -101,7 +101,7 @@ a {
   text-transform: uppercase;
 }
 
-.infrastructure {
+.seach-form {
   background-image: url(../img/filter-background.jpg);
 }
 
@@ -120,31 +120,21 @@ a {
   text-transform: uppercase;
 }
 
-.sorting-link-blue {  
-  color: #cacaca;
-}
-.sorting-link-blue:active{
-  color: #81b3d2;
-}
-.sorting-link-blue:hover {
-  color: #81b3d2;
-}
-.sorting-link-blue:focus {
-  color: #000000;
-}
-
-.sorting-link-gray {
+.sorting-link {  
   color: #cacaca;
   border-bottom: dashed;
 }
-.sorting-link-gray:active{
+.sorting-link:hover {
   color: #81b3d2;
+  border-bottom: dashed;
 }
-.sorting-link-gray:hover {
-  color: #81b3d2;
-}
-.sorting-link-gray:focus {
+.sorting-link:active {
   color: #000000;
+  border-bottom: none;
+}
+.sorting-link-activ{
+  color: #81b3d2;
+  border-bottom: none;
 }
 
 .switch {
@@ -345,7 +335,7 @@ table {
   display: block;
   }
 
-.advantage{
+.five-advantage{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -356,33 +346,35 @@ table {
   }
 
 
-.in-town {
+.advantage-inner-list{
   list-style: none;  
   text-align: center; 
 }
 
-.bold {
+.advantage-headline{
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;  
   text-transform: uppercase;
 }
 
-.regular {
+.advantage-number,
+.advantage-text {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-.blue-background {
+
+.advantage-inner-blue {
   text-align: center; 
   background-color: #81b3d2;
 }
-.white-background {
+.advantage-inner-white{
    background-color: #ffffff;
 }
-.gray-background {
+.advantage-inner-gray {
   text-align: center; 
   background-color: #eeeeee;
 }

@@ -23,10 +23,10 @@
    <main class="search-results">
 
        <h1 class="visually-hidden">Поиск гостиниц</h1>
-       <form class="infrastructure" action="#" method="post">
+       <form class="seach-form" action="#" method="post">
          <fieldset>
-           <legend class="text-bold">Инфраструктура:</legend>
-             <ul class="text-regular">
+           <legend class="form-headline">Инфраструктура:</legend>
+             <ul class="form-list">
                <li>
                  <input type="checkbox" name="waterpool" id="waterpool" checked>
                  <label for="waterpool">Бассейн</label>
@@ -42,8 +42,8 @@
              </ul>
          </fieldset>
          <fieldset>
-            <legend class="text-bold">Тип жилья:</legend>
-              <ul class="text-regular">
+            <legend class="form-headline">Тип жилья:</legend>
+              <ul class="form-list">
                 <li>
                   <input type="checkbox" name="hotel" id="hotel" checked>
                   <label for="hotel">Гостиница</label>
@@ -59,10 +59,10 @@
               </ul>
           </fieldset>
           <fieldset>
-              <legend class="text-bold">Стоимость в сутки (Р):</legend>
+              <legend class="form-headline">Стоимость в сутки (Р):</legend>
                <div>
-                 <label class="text-regular">От<input type="text" name="min-price" value="0"></label>
-                 <label class="text-regular">До<input type="text" name="max-price" value="3000"></label>
+                 <label class="form-list">От<input type="text" name="min-price" value="0"></label>
+                 <label class="form-list">До<input type="text" name="max-price" value="3000"></label>
                </div>
                <div>
                  <div></div>
@@ -78,9 +78,9 @@
           <p class="result">Найдено: 3</p>
           <p class="sorting">Сортировка:</p>
              <ul class="sorting">
-               <li><a class="sorting-link-blue" href="#">По цене</a></li>
-               <li><a class="sorting-link-gray" href="#">По типу</a></li>
-               <li><a class="sorting-link-gray" href="#">По рейтингу</a></li>
+               <li><a class="sorting-link sorting-link-activ" href="#">По цене</a></li>
+               <li><a class="sorting-link" href="#">По типу</a></li>
+               <li><a class="sorting-link" href="#">По рейтингу</a></li>
              </ul>
              <ul class="switch">
                <li>
