@@ -92,7 +92,8 @@ a {
   text-transform: uppercase;
 }
 
-.form-list {
+.form-list,
+.form-cost {
   list-style: none;
   color: #ffffff;
   font-size: 14px;
@@ -101,11 +102,12 @@ a {
   text-transform: uppercase;
 }
 
-.seach-form {
+.search-form {
   background-image: url(../img/filter-background.jpg);
 }
 
-.sorting {
+.sorting,
+.sorting-list {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
@@ -132,7 +134,7 @@ a {
   color: #000000;
   border-bottom: none;
 }
-.sorting-link-activ{
+.sorting-link-active{
   color: #81b3d2;
   border-bottom: none;
 }
@@ -335,7 +337,7 @@ table {
   display: block;
   }
 
-.five-advantage{
+.features-advantage{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
