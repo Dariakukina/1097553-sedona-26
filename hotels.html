@@ -24,10 +24,10 @@
 
        <h1 class="visually-hidden">Поиск гостиниц</h1>
        <form class="search-form" action="#" method="post">
-         <fieldset>
+         <fieldset class="infastructure-field">
            <legend class="form-headline">Инфраструктура:</legend>
              <ul class="form-list">
-               <li>
+               <li class="form-list-indent">
                  <input type="checkbox" name="waterpool" id="waterpool" checked>
                  <label for="waterpool">Бассейн</label>
                </li>
@@ -41,7 +41,7 @@
                </li>
              </ul>
          </fieldset>
-         <fieldset>
+         <fieldset class="type-field">
             <legend class="form-headline">Тип жилья:</legend>
               <ul class="form-list">
                 <li>
@@ -58,22 +58,24 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset>
-              <legend class="form-headline">Стоимость в сутки (Р):</legend>
-               <div>
-                 <label class="form-cost">От<input type="text" name="min-price" value="0"></label>
-                 <label class="form-cost">До<input type="text" name="max-price" value="3000"></label>
+          <fieldset class="filter-range">
+              <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+               <div class="price-controls">
+                 <label class="min-price">От <input type="text" name="min-price" value="0"></label>
+                 <label class="max-price">До <input type="text" name="max-price" value="3000"></label>
                </div>
-               <div>
-                 <div></div>
-                 <div></div>
-                 <div></div>
+               <div class="range-controls">
+                 <div class="scale">
+                    <div class="bar"></div>
+                 </div>
+                 <div class="range-toggle range-toggle-min"></div>
+                 <div class="range-toggle range-toggle-max"></div>
                </div>
                <button class="btn-transparent" type="submit">Показать</button>
           </fieldset>
        </form>
 
-     <section>
+     <section class="result-list">
         <h2 class="visually-hidden">Результат</h2>
           <p class="result">Найдено: 3</p>
           <p class="sorting">Сортировка:</p>

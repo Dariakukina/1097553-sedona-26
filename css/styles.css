@@ -84,7 +84,25 @@ a {
   background-color: #ffffff;
 }
 
-.form-headline {
+
+.search-form {
+  display: flex;
+  background-image: url(../img/filter-background.jpg);
+}
+.infastructure-field,
+.type-field,
+.filter-range{
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 33px; 
+}
+.infastructure-field {
+  margin-left: 73px;
+  margin-right: 105px;  
+}
+
+.form-headline{
   color: #ffffff;
   font-size: 16px;
   line-height: 21px;
@@ -92,8 +110,13 @@ a {
   text-transform: uppercase;
 }
 
+.type-field{
+  margin-right: 375px;   
+}
+
 .form-list,
-.form-cost {
+.min-price,
+.max-price{
   list-style: none;
   color: #ffffff;
   font-size: 14px;
@@ -102,17 +125,135 @@ a {
   text-transform: uppercase;
 }
 
-.search-form {
-  background-image: url(../img/filter-background.jpg);
+.form-list{
+  padding: 0;
+}
+
+.form-list li {
+  padding-bottom: 33px;
+}
+
+.filter-range {
+  width: 330px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.filter-range-title{
+  margin-bottom: 9px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;  
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover {
+  background: #1c4f80;
+}
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-transparent:hover {
+  color: #000000;
+  background: #ffffff;
+}
+
+
+.result-list{
+  display: flex;
+  margin-top:31px;
+  margin-left: 73px;
 }
 
 .sorting,
 .sorting-list {
+  display: flex;
   list-style: none;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .result {
@@ -120,11 +261,19 @@ a {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-right: 50px;
+}
+
+.sorting{
+  margin-right: 40px;
 }
 
 .sorting-link {  
   color: #cacaca;
   border-bottom: dashed;
+  margin-right: 40px;
 }
 .sorting-link:hover {
   color: #81b3d2;
@@ -140,7 +289,12 @@ a {
 }
 
 .switch {
+  display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: 73px;
 }
 
  
@@ -337,7 +491,7 @@ table {
   display: block;
   }
 
-.features-advantage{
+.features-text{
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
@@ -347,10 +501,20 @@ table {
   margin: 0;
   }
 
+.advantage-inner{
+  display: block;
+  height: 227px;
+  width: 400px;
+  padding-top: 29px;
+}
+
 
 .advantage-inner-list{
+  display: flex;
   list-style: none;  
   text-align: center; 
+  padding: 0;
+  margin: 0;
 }
 
 .advantage-headline{
@@ -358,6 +522,7 @@ table {
   line-height: 21px;
   font-weight: 700;  
   text-transform: uppercase;
+  
 }
 
 .advantage-number,
@@ -366,12 +531,16 @@ table {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
+  
 }
-
+.line-advantage {
+  display: flex;
+}
 
 .advantage-inner-blue {
   text-align: center; 
   background-color: #81b3d2;
+  color: #ffffff;
 }
 .advantage-inner-white{
    background-color: #ffffff;
@@ -423,10 +592,12 @@ table {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-
   background-color: rgba(254, 254, 254, 0.9); 
 }
 
+.main-footer-index{
+  margin-top: -120px;
+}
 
 .footer-contacts {
   flex-grow: 0;
@@ -495,8 +666,6 @@ table {
   
   
   
- /* margin-top: 0;
-  margin-bottom: 0;*/
 }
 
 .copyright-text{
