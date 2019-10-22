@@ -119,7 +119,7 @@ a {
 
 
 .form-list,
-.price{
+.price-label{
   list-style: none;
   color: #ffffff;
   font-size: 14px;
@@ -168,7 +168,7 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.price{
+.price-label{
   font-size: 14px;
   line-height: 38px;
   vertical-align: top;
@@ -242,17 +242,17 @@ a {
 .check{
   padding-left:30px;
   display:flex;
-  flex-direction:row;
   align-items:center;
+  position: relative;
 }
 
-.check__input{
+.check-input{
   position:absolute;
   -webkit-appearance:none;
   -moz-appearance:none;
 }
 
-.check__box{
+.check-box{
   position:absolute;
   width:26px;
   height:26px;
@@ -261,11 +261,9 @@ a {
   background-image:url(../img/checkbox-off.svg);
 }
 
-.check__input:checked + .check__box{
+.check-input:checked + .check-box{
   background-image:url(../img/checkbox-on.svg);
-  /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E");*/
-  width:26px;
-  height:22px;
+  background-repeat: no-repeat;
 }
 
 
@@ -495,7 +493,6 @@ table {
 
 .welcome-sedona {
   display: block;
-  /*padding-top: 20px;*/
   margin: auto;
   
 }
@@ -600,8 +597,11 @@ table {
 
 .map {
   height: 593px;
-  font-size: 0;
   background-image: url(../img/map.png);
+}
+
+.search{
+  position: relative;
 }
 
 .interested {
@@ -631,7 +631,6 @@ table {
   }
 
 .button-find {
-  position: relative;
   width: 570px;
   height: 87px;
   font-size: 21px;
@@ -646,6 +645,118 @@ table {
   background-color: #766357;
   padding: 0;
  }
+
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -285px;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 3;
+}
+
+
+
+.modal-login { 
+  width: 450px;  
+  padding: 57px 60px;
+}
+
+.registration-form{
+  font-size: 14px;
+  line-height:26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.date-label{
+height: 38px;
+line-height: 38px;
+}
+
+.date-wrapper{
+  display: flex;
+}
+
+.find {
+  width: 458px;
+  height: 60px;
+  font-size: 21px;
+  line-height:26px;
+  display: block;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight: 700;
+  padding: 0;
+  border: none;
+  background-color: #81b3d2;}
+  
+
+.date-field {
+  display: block;
+  height: 38px;
+  width: 333px;
+  padding: 0;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  border: 0;
+  padding-left: 13px;
+  margin-left: auto;
+  
+}
+.count-wrapper{
+  display: flex;
+  width: 458px;
+  font-size: 0;
+  
+}
+
+.count-wrapper input::-webkit-outer-spin-button,
+.count-wrapper input::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+    margin: 0; 
+  }
+
+.count-field{
+  height: 38px;
+  width: 38px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.count-button{
+  height: 38px;
+  width: 38px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  background-color: #f2f2f2;
+  border: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.count-label{
+  font-size: 14px;
+}
+.count-label-adults{
+  margin-right: 40px;
+}
+
+.count-label-children{
+  margin-left: 52px;  
+  margin-right: 27px;
+}
   
 /* footer*/
 .main-footer { 
@@ -765,121 +876,4 @@ table {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-
-/* Всплывающая форма */
-
-.modal {
-  position: absolute;
-  top: 2169px;
-  margin-left: 315px;
-  background-color: #ffffff;
-  color: #000000;
-  z-index: 3;
-}
-
-
-
-.modal-login {  
-  height: 287px;
-  width: 450px;  
-  padding: 57px 60px;
-}
-
-.registration-form{
-  font-size: 14px;
-  line-height:26px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.name-field{
-height: 38px;
-line-height: 38px;
-}
-
-.fields-form{
-  display: flex;
-}
-
-.find {
-  width: 458px;
-  height: 60px;
-  font-size: 21px;
-  line-height:26px;
-  display: block;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 20px;
-  font-weight: 700;
-  padding: 0;
-  border: none;
-  background-color: #81b3d2;}
-  
-
-.entry-field {
-  display: block;
-  height: 38px;
-  width: 333px;
-  padding: 0;
-  font-weight: 700;
-  margin-bottom: 30px;
-  background-color: #f2f2f2;
-  border: 0;
-  padding-left: 13px;
-  margin-left: auto;
-  
-}
-.count {
-  display: flex;
-  width: 458px;
-  font-size: 0;
-  
-}
-
-.count input::-webkit-outer-spin-button,
-.count input::-webkit-inner-spin-button {
-    display: none;
-    -webkit-appearance: none;
-    margin: 0; 
-  }
-
-.count-entry-field
-{
-  height: 38px;
-  width: 38px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-  background-color: #f2f2f2;
-  border: 0;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-}
-
-.count-entry-field-button
-{
-  height: 38px;
-  width: 38px;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 30px;
-  background-color: #f2f2f2;
-  border: 0;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.count-adults{
-
-  font-size: 14px;
-  margin-right: 40px;
-}
-
-.count-children{
-  font-size: 14px;
-  margin-left: 52px;  
-  margin-right: 27px;
 }

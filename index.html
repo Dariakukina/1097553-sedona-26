@@ -31,7 +31,7 @@
      
      <section class="features">    
        <h2 class="visually-hidden">Преимущества</h2>
-       <p class="features-text">Рассмотрим 5 причин,  по которым Седона круче, чем Гранд Каньон!</p>
+       <p class="features-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
      </section>
 
      <section class="advantage">
@@ -105,40 +105,41 @@
        <section>
      </div>
     
-     <section>
+     <section class="search">
        <p class="interested">Заинтересовались?</p>
        <p class="travel-date">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
        <button class="button-find" type="button">Поиск гостиницы в Седоне</button>
+       <section class="modal modal-login">
+        <form class="registration-form" action="#" method="post">
+          <div class="date-wrapper">
+            <label class="date-label" for="arrival-date">Дата заезда:</label>
+            <input class="date-field" type="text" name="arrival" id="arrival-date" placeholder="24 АПРЕЛЯ 2017">
+          </div>
+          <div class="date-wrapper">
+            <label class="date-label" for="departure-date">Дата выезда:</label>
+            <input class="date-field" type="text" name="departure" id="departure-date" placeholder="4 ИЮЛЯ 2017">
+          </div>
+          <div class="count-wrapper">
+            <div>
+              <label class="count-label count-label-adults" for="adults">Взрослые:</label>
+              <button  class="count-button" type="button">-</button>
+              <input  class="count-field" type="number" min="0" max="30" step="1" name="number-of-adults" id="adults" placeholder="2">
+              <button  class="count-button" type="button">+</button>
+            </div>
+            <div>
+              <label class="count-label count-label-children" for="children">Дети:</label>
+              <button class="count-button" type="button">-</button>
+              <input class="count-field" type="number" min="0" max="30" step="1" name="number-of-сhildren" id="children" placeholder="0">
+              <button class="count-button" type="button">+</button>
+            </div>
+          </div>
+          <button class="find" type="submit">Найти</button>           
+        </form>        
+      </section>
      </section>
-     <section class="modal modal-login">
-      <form class="registration-form" action="#" method="post">
-        <div class="fields-form">
-          <label class="name-field" for="arrival-date">Дата заезда:</label>
-          <input class="entry-field" type="text" name="arrival" id="arrival-date" placeholder="24 АПРЕЛЯ 2017">
-        </div>
-        <div class="fields-form">
-          <label class="name-field" for="departure-date">Дата выезда:</label>
-          <input class="entry-field" type="text" name="departure" id="departure-date" placeholder="4 ИЮЛЯ 2017">
-        </div>
-        <div class="count">
-          <div>
-            <label class="count-adults" for="adults">Взрослые:</label>
-            <button  class="count-entry-field-button" type="button">-</button>
-            <input  class="count-entry-field" type="number" min="0" max="30" step="1" name="number-of-adults" id="adults" placeholder="2">
-            <button  class="count-entry-field-button" type="button">+</button>
-          </div>
-          <div>
-            <label class="count-children" for="children">Дети:</label>
-            <button class="count-entry-field-button" type="button">-</button>
-            <input class="count-entry-field" type="number" min="0" max="30" step="1" name="number-of-сhildren" id="children" placeholder="0">
-            <button class="count-entry-field-button" type="button">+</button>
-          </div>
-        </div>
-        <button class="find" type="submit">Найти</button>           
-      </form>        
-    </section>            
+                 
      <section class="map">
-       <p class="visually-hidden">Карта Седоны<p>
+       <span class="visually-hidden">Карта Седоны<span>
      </section>
    </main>
 
