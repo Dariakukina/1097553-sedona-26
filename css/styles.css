@@ -8,11 +8,13 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  
   color: #333333;
-
   background-color: #f2f2f2;  
 }
-
+.container {
+  box-shadow: 0 0 5px 5px #dbdbdb;
+}
 /* header*/
 
 .main-header {
@@ -96,6 +98,7 @@ a {
   display: flex;
   background-image: url(../img/filter-background.jpg);
   height: 215px;
+  
 }
 .search-form-fieldset{
   border: none;
@@ -271,6 +274,7 @@ padding-left: 56px;
   background-image:url(../img/checkbox-off.svg);  
   background-repeat: no-repeat;
 }
+
 
 .check-input:checked + .check-box{
   background-image:url(../img/checkbox-on.svg);
@@ -662,7 +666,7 @@ table {
   }
 
 .button-find {
-  width: 570px;
+  width: 568px;
   height: 87px;
   font-size: 21px;
   line-height:26px;
@@ -690,17 +694,19 @@ table {
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -285px;
+  margin-left: -284px;
   background-color: #ffffff;
   color: #000000;
   z-index: 3;
+  
+	box-shadow: 0 7px 5px 0  #bbb7b0;
 }
 
 
 
 .modal-login { 
-  width: 450px;  
-  padding: 57px 60px;
+  width: 458px;  
+  padding: 56px 55px;
 }
 
 .registration-form{
@@ -708,6 +714,7 @@ table {
   line-height:26px;
   font-weight: 700;
   text-transform: uppercase;
+  
 }
 
 .date-label{
@@ -728,7 +735,7 @@ line-height: 38px;
   display: block;
   text-transform: uppercase;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 23px;
   font-weight: 700;
   padding: 0;
   border: none;
@@ -752,11 +759,20 @@ line-height: 38px;
   font-weight: 700;
   margin-bottom: 30px;
   background-color: #f2f2f2;
-  border: 0;
+  border: none;
+  outline: none;
+  outline-style: none;
+  outline-width: 2px;
   padding-left: 13px;
   margin-left: auto;
+  outline-color: #e5e5e5;
   
 }
+.date-field:focus {
+  outline-style: solid;
+
+}
+
 .date-field:hover{
   background-color: #ebebeb;
 }
@@ -766,25 +782,26 @@ line-height: 38px;
 
 .calendar{
   position: absolute;
-	opacity: 0.5;
 	left: 428px;
   top: 8px;
+  fill:#cacaca;
 }
 
-.calendar:hover path,
-.calendar:focus path {
-	fill-opacity: 1;
+.calendar:hover{
+	fill: #0f0f0f;
 }
 
-.calendar:active path {
+.calendar:active{
 	fill: #81b3d2;
 }
 
 .count{
   display: flex;
   width: 458px;
-  font-size: 0;
-  
+}
+
+.count-wrapper {
+  display: flex;
 }
 
 .count input::-webkit-outer-spin-button,
@@ -805,6 +822,8 @@ line-height: 38px;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
+  border: none;
+  outline: none;
 }
 
 .count-button{
@@ -817,10 +836,24 @@ line-height: 38px;
   border: 0;
   font-size: 14px;
   font-weight: 700;
+  border: none;
+  outline: none;
+  font-weight: bold;
+	cursor:pointer;
+	font-size: 20px;
+	color:#a9a9a9;
+}
+.count-button:hover {
+	color:#000;
+} 
+
+.count-button:active {
+  color:#81b3d2;
 }
 
 .count-label{
   font-size: 14px;
+  line-height: 35px;
 }
 .count-label-adults{
   margin-right: 40px;
