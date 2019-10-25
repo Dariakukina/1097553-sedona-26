@@ -271,13 +271,26 @@ padding-left: 56px;
   width:26px;
   height:26px;
   margin-left:-30px;
-  background-image:url(../img/checkbox-off.svg);  
+  background-image:url(../img/checkbox-off.svg); 
   background-repeat: no-repeat;
+  fill: #ffffff;
+}
+/*.check-input * .check-on{ 
+  visibility: hidden;
 }
 
+.check-input:checked * .check-off{ 
+  visibility: hidden;
+}*/
 
 .check-input:checked + .check-box{
   background-image:url(../img/checkbox-on.svg);
+}
+.check-input:disabled + .check-box{ 
+  background-image:url(../img/checkbox-off-disabled.svg);
+}
+.check-input:checked:disabled + .check-box{ 
+  background-image:url(../img/checkbox-on-disabled.svg);
 }
 
 
@@ -759,28 +772,30 @@ line-height: 38px;
   font-weight: 700;
   margin-bottom: 30px;
   background-color: #f2f2f2;
-  border: none;
+  border-color: transparent;
+  border-style: solid;
   outline: none;
-  outline-style: none;
-  outline-width: 2px;
+  margin-left: auto;  
   padding-left: 13px;
-  margin-left: auto;
-  outline-color: #e5e5e5;
-  
 }
-.date-field:focus {
-  outline-style: solid;
-
-}
-
 .date-field:hover{
   background-color: #ebebeb;
 }
-.date-field:focus {
+.date-field:focus{
+  border-color: #e5e5e5;    
   background-color: #ffffff;
 }
+.date-field::placeholder,
+.count-field::placeholder{
+  color: #000;
+}
+
 
 .calendar{
+  border: none;  
+  padding: 0;
+  outline: none;
+  background-color:transparent;
   position: absolute;
 	left: 428px;
   top: 8px;
