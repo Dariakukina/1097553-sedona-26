@@ -81,6 +81,9 @@ a {
   text-align: right;
   padding-right: 72px;
 }
+.site-navigation-link-active {
+  color: #766357;
+}
 
 /* main*/
 
@@ -224,6 +227,12 @@ padding-left: 56px;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
+.range-toggle:hover {
+  top: -10px;
+  margin-left:-1px; 
+  width: 6px;
+  height: 6px;
+}
 
 .range-toggle-min {
   left: 0;
@@ -231,9 +240,7 @@ padding-left: 56px;
 .range-toggle-max {
   left: 80%;
 }
-.range-toggle:hover {
-  background: #1c4f80;
-}
+
 .btn-transparent {
   display: block;
   margin-left: 85px ;
@@ -273,15 +280,8 @@ padding-left: 56px;
   margin-left:-30px;
   background-image:url(../img/checkbox-off.svg); 
   background-repeat: no-repeat;
-  fill: #ffffff;
-}
-/*.check-input * .check-on{ 
-  visibility: hidden;
 }
 
-.check-input:checked * .check-off{ 
-  visibility: hidden;
-}*/
 
 .check-input:checked + .check-box{
   background-image:url(../img/checkbox-on.svg);
@@ -346,20 +346,20 @@ padding-left: 56px;
   border-bottom: none;
 }
 
-.up-icon:hover {
+.min:hover > .up-icon {
   fill: #272324;
 }
-.up-icon:active {
+.min:active > .up-icon{
   fill: #81b3d2;
 }
 
-.down-icon-active{
+.max-active{
   color: #81b3d2
 }
-.down-icon:hover {
+.max:hover > .down-icon{
   fill: #272324;
 }
-.down-icon:active {
+.max:active > .down-icon{
   fill: #81b3d2;
 }
 
@@ -774,6 +774,7 @@ line-height: 38px;
   background-color: #f2f2f2;
   border-color: transparent;
   border-style: solid;
+  border-width: 2px;
   outline: none;
   margin-left: auto;  
   padding-left: 13px;
@@ -786,8 +787,16 @@ line-height: 38px;
   background-color: #ffffff;
 }
 .date-field::placeholder,
-.count-field::placeholder{
-  color: #000;
+.count-field::placeholder,
+.date-field::-webkit-input-placeholder,
+.count-field::-webkit-input-placeholder{
+  color: #000000; 
+ }
+
+.date-field::-moz-placeholder,
+.count-field::-moz-placeholder{
+  color: #000000;
+  opacity: 1;
 }
 
 
@@ -799,14 +808,18 @@ line-height: 38px;
   position: absolute;
 	left: 428px;
   top: 8px;
+  
+}
+
+.calendar-icon {
   fill:#cacaca;
 }
 
-.calendar:hover{
+.calendar:hover > .calendar-icon{
 	fill: #0f0f0f;
 }
 
-.calendar:active{
+.calendar:active > .calendar-icon{
 	fill: #81b3d2;
 }
 
@@ -820,11 +833,16 @@ line-height: 38px;
 }
 
 .count input::-webkit-outer-spin-button,
-.count input::-webkit-inner-spin-button {
+.count input::-webkit-inner-spin-button{
     display: none;
     -webkit-appearance: none;
-    margin: 0; 
+    margin: 0;
   }
+
+.count input{
+
+  -moz-appearance:textfield;
+}
 
 .count-field{
   height: 38px;
@@ -833,7 +851,6 @@ line-height: 38px;
   margin: 0;
   margin-bottom: 30px;
   background-color: #f2f2f2;
-  border: 0;
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -848,7 +865,6 @@ line-height: 38px;
   margin: 0;
   margin-bottom: 30px;
   background-color: #f2f2f2;
-  border: 0;
   font-size: 14px;
   font-weight: 700;
   border: none;
@@ -944,14 +960,14 @@ line-height: 38px;
   background-color: #5496bd;
 }
 
-.twitter:hover,
-.facebook:hover,
-.youtube:hover {
+.social-button:hover > .twitter,
+.social-button:hover > .facebook,
+.social-button:hover > .youtube {
   fill: #ffffff;
 }
-.twitter:active,
-.facebook:active,
-.youtube:active {
+.social-button:active > .twitter,
+.social-button:active > .facebook,
+.social-button:active > .youtube {
   fill: #88b6d1;
 }
 
@@ -983,10 +999,10 @@ line-height: 38px;
   vertical-align: middle;
   padding-left: 8px;
 }
-.academy-logo:hover {
+.academy-logo-link:hover > .academy-logo{
   fill: #81b3d2;
 }
-.academy-logo:active {
+.academy-logo-link:active > .academy-logo{
   fill: #bdbbbc;
 }
 .visually-hidden {
