@@ -60,7 +60,7 @@ a {
 }
 
 .site-navigation-item-right:last-child{
-  margin-left: 0;
+  margin-left: 4px;
 }
 
 .site-navigation-link {
@@ -107,7 +107,7 @@ a {
   border: none;
   margin: 0;
   padding: 0;
-  margin-top: 28px; 
+  margin-top: 27px; 
 }
 .search-form-fieldset-infastructure {
   margin-left: 73px;
@@ -131,7 +131,7 @@ a {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 29px;
+  margin-top: 27px;
 }
 
 .price-label{
@@ -158,6 +158,7 @@ padding-left: 56px;
 
 .form-list li {
   margin-bottom: 25px;
+  margin-left: 10px;
 }
 
 .search-form-fieldset-range{
@@ -277,7 +278,7 @@ padding-left: 56px;
   position:absolute;
   width:26px;
   height:26px;
-  margin-left:-30px;
+  margin-left:-40px;
   background-image:url(../img/checkbox-off.svg); 
   background-repeat: no-repeat;
 }
@@ -296,7 +297,7 @@ padding-left: 56px;
 
 .result{
   display: flex;
-  margin-top:34px;
+  margin-top:31px;
   margin-left: 73px;
   justify-content: center;
   align-items: center;
@@ -311,6 +312,7 @@ padding-left: 56px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 7px;
   padding: 0;
 }
 
@@ -321,17 +323,18 @@ padding-left: 56px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-right: 50px;
+  padding-right: 47px;
 }
 
 .sorting{
   margin-right: 40px;
+  margin-top: 7px;
 }
 
 .sorting-link {  
   color: #cacaca;
   border-bottom: dashed;
-  margin-right: 40px;
+  margin-right: 33px;
 }
 .sorting-link:hover {
   color: #81b3d2;
@@ -371,6 +374,7 @@ padding-left: 56px;
   padding: 0;
   margin-left: auto;
   margin-right: 73px;
+  margin-top: 5px;
 }
 
 .max {
@@ -500,11 +504,11 @@ table {
   background-color: #f2f2f2;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 38px;
+  margin-top: 45px;
   padding-left: 16px;
   padding-right: 13px;
-  padding-bottom: 6px;
-  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-top: 4px;
 }
 
 
@@ -554,7 +558,7 @@ table {
   text-align: center;
   text-transform: uppercase;
   
-  padding-top: 61px;
+  padding-top: 62px;
   padding-bottom: 29px;
  
   margin: 0;
@@ -575,7 +579,7 @@ table {
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
-  padding-bottom: 52px;
+  padding-bottom: 50px;
   text-align: center;
   margin: 0;
   }
@@ -585,9 +589,9 @@ table {
 }
 .advantage-inner{
   display: block;
-  height: 227px;
+  height: 224px;
   width: 400px;
-  padding-top: 29px;
+  padding-top: 32px;
   text-align: center;
 }
 
@@ -596,7 +600,7 @@ table {
   list-style: none;  
   padding: 0;
   margin: 0;
-  padding-top: 5px;
+  padding-top: 2px;
 
 }
 
@@ -608,7 +612,12 @@ table {
   width: 155px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 24px;
   text-align: center;
+}
+.advantage-headline-white{
+  padding-top: 7px;
 }
 
 .advantage-number,
@@ -621,6 +630,7 @@ table {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+  padding-top: 1px;
   
 }
 
@@ -635,8 +645,11 @@ table {
 }
 .advantage-inner-white{
    background-color: #ffffff;
-   padding-bottom: 35px;
+   padding-bottom: 44px;
    padding-top: 60px;
+}
+.advantage-inner-white-last{
+  padding-top: 55px;
 }
 .advantage-inner-gray {
   text-align: center; 
@@ -662,7 +675,7 @@ table {
   text-transform: uppercase;
   margin: 0;
   padding-top: 50px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
  }
 
@@ -674,13 +687,14 @@ table {
   text-align: center;
   text-transform: uppercase;
   margin: 0;
-  padding-bottom: 44px;
+  padding-bottom: 47px;
   background-color: #ffffff;
+  padding-top: 5px;
   }
 
 .button-find {
   width: 568px;
-  height: 87px;
+  height: 88px;
   font-size: 21px;
   line-height:26px;
   display: block;
@@ -719,7 +733,7 @@ table {
 
 .modal-login { 
   width: 458px;  
-  padding: 56px 55px;
+  padding: 52px 55px;
 }
 
 .registration-form{
@@ -733,6 +747,8 @@ table {
 .date-label{
 height: 38px;
 line-height: 38px;
+padding-left: 1px;
+padding-top: 1px;
 }
 
 .date-wrapper{
@@ -766,11 +782,11 @@ line-height: 38px;
 
 .date-field {
   display: block;
-  height: 38px;
-  width: 333px;
+  height: 36px;
+  width: 330px;
   padding: 0;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
   background-color: #f2f2f2;
   border-color: transparent;
   border-style: solid;
@@ -826,6 +842,7 @@ line-height: 38px;
 .count{
   display: flex;
   width: 458px;
+  padding-top: 4px;
 }
 
 .count-wrapper {
@@ -900,7 +917,7 @@ line-height: 38px;
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 30px;
   padding-bottom: 36px;
   align-items: center;
   margin-left: auto;
@@ -930,6 +947,7 @@ line-height: 38px;
   flex-grow: 1;
   justify-content: center;
   padding: 0;
+  padding-left: 26px;
   margin: 0;
 
   list-style: none;
@@ -976,7 +994,8 @@ line-height: 38px;
   justify-content: center;
   align-items: center;
   flex-grow: 0;
-  padding-right: 101px;
+  padding-right: 107px;
+  padding-top: 3px;
   
   
   
