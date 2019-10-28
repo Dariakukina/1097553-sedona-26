@@ -100,7 +100,7 @@ a {
 .search-form {
   display: flex;
   background-image: url(../img/filter-background.jpg);
-  height: 215px;
+  height: 217px;
   
 }
 .search-form-fieldset{
@@ -131,7 +131,7 @@ a {
   line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;
-  margin-top: 27px;
+  margin-top: 28px;
 }
 
 .price-label{
@@ -140,7 +140,7 @@ a {
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  line-height: 38px;
+  line-height: 32px;
   vertical-align: top;
   cursor: pointer;  
   width: 90px;
@@ -162,24 +162,25 @@ padding-left: 56px;
 }
 
 .search-form-fieldset-range{
-  margin-right: 69px;
+  margin-right: 72px;
   margin-left: auto;
 }
 
 
 .form-headline-range{
-  margin-bottom: 9px;
+  margin-bottom: 10px;
+  margin-left: 1px;
 }
 
 
 .price-controls {
   display: flex;
   position: relative;
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
-  width: 317px;
+  width: 313px;
 }
 
 .price-controls::after {
@@ -266,6 +267,8 @@ padding-left: 56px;
   display:flex;
   align-items:center;
   position: relative;
+  height: 17px;
+  margin-bottom: 29px;
 }
 
 .check-input{
@@ -297,8 +300,8 @@ padding-left: 56px;
 
 .result{
   display: flex;
-  margin-top:31px;
-  margin-left: 73px;
+  margin-top:29px;
+  margin-left: 71px;
   justify-content: center;
   align-items: center;
 }
@@ -312,7 +315,7 @@ padding-left: 56px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 7px;
+  margin-top: 8px;
   padding: 0;
 }
 
@@ -323,12 +326,12 @@ padding-left: 56px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-right: 47px;
+  padding-right: 49px;
 }
 
 .sorting{
   margin-right: 40px;
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .sorting-link {  
@@ -384,7 +387,7 @@ padding-left: 56px;
 .catalog-list {
   list-style: none;
   padding: 0;
-  margin-top: 32px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -395,8 +398,8 @@ padding-left: 56px;
   width: 1056px;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 32px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -412,26 +415,39 @@ padding-left: 56px;
 
 .description {
   margin-right: auto;
+  height: 91px;
 }
 
 .hotel-name{
   margin: 0;
 }
 
+.description-inner{
+display: flex;
+
+}
+
+.description-inner-column{
+  display: block;
+  
+  }
 table {
   border: 0px;
   border-spacing: 0px;
   height: 63px;
+  margin-top: 5px; 
 }
 
 .hotel-parameter {
+  display: block;
   margin: 0;
   text-transform: uppercase;
+  margin-top: 8px;
 }
 
 .hotel-name-link{
   font-size: 21px;
-  line-height: 26px;
+  line-height: 0px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -447,41 +463,60 @@ table {
 
  .button {
   display: block;
-  text-transform: uppercase;
-  color: #ffffff;
-  font-weight: 700;
-
+  margin-right: 5px;
   border: none;
-  padding-right: 16px;
-  padding-left: 16px;
-  padding-bottom: 5px;
-  padding-top: 5px;
+  padding-right: 19px;
+  padding-left: 15px;
+  padding-bottom: 7px;
+  padding-top: 4px;
+  margin-top: 14px;
+  outline: none;
+}
+
+.description-inner:first-child button{
+  margin-right: 6px;  
+
 }
 
 .button-more {
   background-color: #81b3d2;
-  margin-right: 6px;
+  
+   
 }
 .button-more:hover{
   color: #ffffff;
   background-color: #669ec0;
 }
-.button-more:focus {
-  color:#94b9d2;
+.button-more:focus{
   background-color: #5496bd;
+}
+.button-more:focus > .button-more-link,
+.button-more-link:focus {
+  color:#94b9d2;
 }
 
 .button-book {
   background-color: #766357;
+  
+  
 }
 .button-book:hover{
   color: #ffffff;
   background-color: #604e43;
 }
   
-.button-book:focus {
-  color:#928a85;
+.button-book:focus{
   background-color: #503e33;
+}
+.button-book:focus > .button-book-link,
+.button-book-link:focus {
+  color:#928a85;
+}
+.button-more-link,
+.button-book-link {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .star {
@@ -648,7 +683,7 @@ table {
    padding-bottom: 44px;
    padding-top: 60px;
 }
-.advantage-inner-white-last{
+.advantage-inner-list li:last-child .advantage-inner-white{
   padding-top: 55px;
 }
 .advantage-inner-gray {
@@ -917,7 +952,7 @@ padding-top: 1px;
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 36px;
   align-items: center;
   margin-left: auto;
