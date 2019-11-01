@@ -843,8 +843,14 @@ a {
 }
 
 .date-field::placeholder,
-.count-field::placeholder,
-.date-field::-webkit-input-placeholder,
+.count-field::placeholder {
+  color: #000000;
+}
+
+.date-field::-webkit-input-placeholder {
+  color: #000000;
+}
+
 .count-field::-webkit-input-placeholder {
   color: #000000;
 }
@@ -855,6 +861,13 @@ a {
   opacity: 1;
 }
 
+.date-field:-ms-input-placeholder {
+  color: #000000;
+}
+
+.count-field:-ms-input-placeholder {
+  color: #000000;
+}
 
 .calendar {
   border: none;
@@ -914,7 +927,6 @@ a {
 }
 
 .count-button {
-
   height: 38px;
   width: 38px;
   padding: 0;
@@ -968,17 +980,18 @@ a {
   margin-top: -120px;
 }
 
-.footer-path {
+.footer-part {
   width: 400px;
 }
 
 .footer-contacts {
+  display: flex;
+  justify-content: center;
   color: #000000;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  padding-left: 132px;
 }
 
 .footer-contacts:hover,
