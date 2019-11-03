@@ -622,27 +622,23 @@ a {
 
 .advantage-icon-home {
   background-image: url(../img/icon-1.svg);
-  height: 72px;
-  width: 75px;
-  margin-left: auto;
-  margin-right: auto;
+  background-position-x: center;
+  background-position-y: 58px;
+  background-repeat: no-repeat;
 }
 
 .advantage-icon-souvenirs {
   background-image: url(../img/icon-2.svg);
-  height: 76px;
-  width: 64px;
-  margin-left: auto;
-  margin-right: auto;
+  background-position-x: center;
+  background-position-y: 54px;
+  background-repeat: no-repeat;
 }
 
 .advantage-icon-food {
   background-image: url(../img/icon-3.svg);
-  height: 70px;
-  width: 74px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1px;
+  background-position-x: center;
+  background-position-y: 58px;
+  background-repeat: no-repeat;
 }
 
 .advantage-headline {
@@ -659,7 +655,7 @@ a {
 }
 
 .advantage-headline-white {
-  padding-top: 12px;
+  padding-top: 83px;
 }
 
 .advantage-number,
@@ -701,10 +697,6 @@ a {
   background-color: #ffffff;
   padding-bottom: 44px;
   padding-top: 59px;
-}
-
-.advantage-inner-list li:last-child .advantage-inner-white {
-  padding-top: 55px;
 }
 
 .advantage-inner-gray {
